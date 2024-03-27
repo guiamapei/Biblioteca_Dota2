@@ -3,56 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Dota 2</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: black;
-        }
-        section{
-            width: 100vw;
-        }
-        section>img{
-            width: 100vw;
-        }
-        section>iframe{
-            width: 100vw;
-            scrollbar-width: 0px;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        BARRA DE NAVEGAÇÃO
-        <nav>
-            <a href="https://www.dota2.com/home" target="_blank">DOTA 2</a>
-            <a href="https://www.dota2.com/heroes" target="_blank">HEROIS</a>
-            <a href="https://dota2.fandom.com/pt/wiki/Itens" target="_blank">ITENS</a>
-            <a href="https://dota2.fandom.com/pt/wiki/Criaturas" target="_blank">CRIATURAS</a>
-            <a href="https://dota2.fandom.com/pt/wiki/Dota_2#:~:text=Dota%202%20%C3%A9%20um%20jogo,para%20Mac%20OS%20e%20Linux." target="_blank">HISTORIA</a>
-            <a href="https://www.dota2.com/esports/ti12/watch/0/0/series" target="_blank">ESPORTS</a>
-        </nav>
-    </header>
+    <main>
+        <header>
+            BARRA DE NAVEGAÇÃO
+            <nav>
+                <a href="https://www.dota2.com/home" target="_blank">DOTA 2</a>
+                <a href="https://www.dota2.com/heroes" target="_blank">HEROIS</a>
+                <a href="https://dota2.fandom.com/pt/wiki/Itens" target="_blank">ITENS</a>
+                <a href="https://dota2.fandom.com/pt/wiki/Criaturas" target="_blank">CRIATURAS</a>
+                <a href="https://dota2.fandom.com/pt/wiki/Dota_2#:~:text=Dota%202%20%C3%A9%20um%20jogo,para%20Mac%20OS%20e%20Linux." target="_blank">HISTORIA</a>
+                <a href="https://www.dota2.com/esports/ti12/watch/0/0/series" target="_blank">ESPORTS</a>
+            </nav>
+        </header>
+        <div>
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/vAwGugKLRn4?si=xfb2V-M2W1bOGa2t&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <section>SECTION 1 <p></p><img src="imagens/sec1imagem.jpg" alt=""></section>
+        <section>SECTION 2
+            <section class="sec2">SECTION 4
+                <p style="color: rgba(160, 160, 160, 0.788);
+                font-family: 'Village', Times, serif;
+                font-weight: bold;
+                font-size: 5em;
+                letter-spacing: .2em;
+                line-height: 1em;
+                text-align: center;
+                text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
+                position: absolute;
+    
+                top: 65%;
+                left: 50%;
+    
+                transform: translate(-50%, 0%);">
+                QUEM IRÁS</p>
+                <p>ESCOLHER?</p>
+            </section>
+        </section>
+        <section>SECTION 3 <p></p><iframe src="herois.html" frameborder="0" height="400px"></iframe></section>
 
-    <section>SECTION 1 <p></p><img src="imagens/sec1imagem.jpg" alt=""></section>
 
-    <section><img src="imagens/sec2imagem.jpg" alt=""></section>
+        <section class="sec5">SECTION 5 
+        <p style="color: rgba(160, 160, 160, 0.788);
+            font-family: 'Village', Times, serif;
+            font-weight: bold;
+            font-size: 5em;
+            letter-spacing: .2em;
+            line-height: 1em;
+            text-align: center;
+            text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
+            position: absolute;
 
-    <section>SECTION 3 <p></p><iframe src="herois.html" frameborder="0" height="400px"></iframe></section>
+            top: 65%;
+            left: 50%;
 
-    <section>SECTION 4 <p></p><img src="imagens/international.jpg" alt=""></section>
-
-    <section>SECTION 5 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A consequatur minus deleniti quo dolorem perferendis cumque maxime. Nulla voluptatum sed qui eos, harum hic aspernatur! Ex molestiae unde placeat rem.</p></section>
-
-    <section>SECTION 6 <p></p><img src="imagens/Seeker.jpg" alt=""></section>
-
-    <footer style="background-color: black;">
-        <div style="color: white;">FOOTER</div>
-        <img src="imagens/valve.jpg" alt="">
-        <img src="imagens/dota2logo.jpg" alt="">
-    </footer>
+            transform: translate(-50%, 0%);">
+            CIRCUITO</p>
+            <p>PROFISSIONAL DE DOTA</p></section>
+        <section>SECTION 6 <p></p><img src="imagens/Seeker.jpg" alt="" style="height: 500px;"></section>
+        <footer>
+            <a href="https://www.valvesoftware.com/pt-br/"><img src="imagens/valve.jpg" alt="Valve"></a>
+            <a href="https://www.dota2.com/home"><img src="imagens/dota2logo.jpg" alt="Dota2"></a>
+            <p>Dota e o logotipo do Dota são marcas e/ou marcas registradas da Valve Corporation. <br>
+                 2023 Valve Corporation, todos os direitos reservados.</p>
+        </footer>
+    </main>
 </body>
 </html>

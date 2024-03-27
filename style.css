@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: linear-gradient(to right, rgb(255, 47, 47), rgb(110, 255, 110) rgb(71, 71, 255));
+    background-color: black;
 }
 
 h1{
@@ -23,35 +23,34 @@ img{
     
 }
 img:hover {
-    width: 150px;
+    width: 120px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
 }
 
 
 
 .forca {
-    background-image: linear-gradient(rgb(185, 0, 0), rgb(102, 1, 1) );
-    padding: 1px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px 1px rgb(255, 0, 0);
-    margin: -7px;
-    height: 100%;
+    background-image: linear-gradient(black, rgba(207, 0, 0, 0.5), black );
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+    text-align: center;
 }
 .agilidade {
-    background-image: linear-gradient(rgb(0, 185, 0), rgb(0, 82, 0));
-    padding: 1px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px 1px rgb(0, 255, 0);
-    margin: -7px;
-    margin-top: 15px;
-    height: 100%;
+    background-image: linear-gradient(black, rgba(0, 207, 0, 0.5), black);
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 .inteligencia {
-    background-image: linear-gradient(rgb(0, 0, 185), rgb(0, 0, 121));
-    padding: 1px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px 1px rgb(0, 0, 255);
-    margin: -7px;
-    margin-top: 15px;
-    height: 100%;
+    background-image: linear-gradient(black, rgba(0, 0, 207, 0.5), black);
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
     
 }
