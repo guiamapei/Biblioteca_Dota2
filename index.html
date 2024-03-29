@@ -3,7 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/indexstyle.css">
+
+    <style>        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100vh;
+            width: 98.7vw;
+            background-color: black;
+        }
+        main{
+            height: 100vh;
+        }
+        section>img{
+            width: 98.7vw;
+        }
+        iframe{
+            width: 98.7vw;
+        }
+
+/*------------------------------------------------------------------------------*/
+
+        header{
+            height: 50px;
+            color: white;
+        }
+        nav{
+            text-align: center;
+        }
+        nav>a{
+            color: rgba(255, 255, 255, 0.795);
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            border: 2px solid grey;
+            padding: 5px;
+            border-radius:5px;
+        }
+        nav>a:hover{
+            color: white;
+            font-size: 1.009em;
+        }
+
+/*------------------------------------------------------------------------------*/
+        section.sec2{
+            height: 110vh;
+            background: url("imagens/sec2imagem.jpg") no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+
+        section.sec2>h1{
+            color: rgba(255, 255, 255, 0.74);
+            font-family: 'Village', Times, serif;
+            font-weight: bold;
+            font-size: 6em;
+            letter-spacing: .1em;
+            text-align: center;
+            text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
+            position: absolute;
+
+            top: 67%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+        }
+        section.sec2>h2{
+            
+            color: rgba(128, 128, 128, 0.863);
+            font-family: 'Village', Times, serif;
+            font-weight: bold;
+            font-size: 5em;
+            letter-spacing: .1em;
+            text-align: center;
+            text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
+            position: absolute;
+
+            top: 48%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+        }
+        section.sec2>a{
+            color: rgba(255, 255, 255, 0.801);
+            font-family: Arial, Helvetica, sans-serif;
+            border: 3px solid rgba(128, 128, 128, 0.795);
+            padding: 18px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+
+            position: absolute;
+
+            top: 95%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+        }
+        section.sec2>a:hover{
+            border: 3px solid #FF6046;
+            position: absolute;
+
+            top: 94.8%;
+            left: 50.1%;
+
+            transform: translate(-50%, 0%)
+        }
+
+        section.sec2>p{
+            width: 700px;
+            color: rgba(255, 255, 255, 0.836);
+            font-family: 'Fourche', Times, sans-serif;
+            font-weight: normal;
+            line-height: 1.5em;
+            font-size: 1.2em;
+            
+            text-align: center;
+            position: absolute;
+
+            top: 83%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+        }
+
+        section.sec2>hr{
+            width: 100px;
+            border: 2px solid #FF6046;
+            border-radius: 1.5px;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.562);
+
+            position: absolute;
+            top: 80.5%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+        }
+
+/*------------------------------------------------------------------------------------*/
+
+        section.sec4{
+            height: 1200px;
+            background: url("imagens/international.jpg") no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+
+        section.sec4>h1{
+            color: rgba(128, 128, 128, 0.411);
+            font-family: 'Village', Times, serif;
+            font-weight: bold;
+            font-size: 4em;
+            letter-spacing: .1em;
+            text-align: center;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.527);
+            position: relative;
+
+            top: 60%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+        }
+        section.sec4>h2{
+            color: rgba(255, 255, 255, 0.692);
+            font-family: 'Village', Times, serif;
+            font-weight: bold;
+            font-size: 5.5em;
+            line-height: .9em;
+            text-align: center;
+            text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
+            position: relative;
+
+            top: 61%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+        }
+
+        section.sec4>p{
+            width: 700px;
+            color: rgba(255, 255, 255, 0.836);
+            font-family: 'Fourche', Times, sans-serif;
+            font-weight: normal;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            
+            text-align: center;
+            position: relative;
+
+            top: 64%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+        }
+
+        section.sec4>hr{
+            width: 100px;
+            border: 2px solid #FF6046;
+            border-radius: 1.5px;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.562);
+
+            position: relative;
+            top: 63%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+        }
+
+/*--------------------------------------------------------------------------------------*/
+
+        section.sec5{
+            background: url("imagens/Seeker.jpg") no-repeat center center;
+            height: 70vh;
+            background-size: cover;
+            position: relative;
+        }
+        section.sec5>h1{
+            color: rgba(255, 255, 255, 0.74);
+            font-family: 'Village', Times, serif;
+            font-weight: bold;
+            font-size: 3em;
+            letter-spacing: .1em;
+            text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
+            position: absolute;
+
+            top: 85%;
+            left: 18.8%;
+
+            transform: translate(-50%, 0%);
+        }
+        section.sec5>h2{
+            
+            color: rgba(128, 128, 128, 0.863);
+            font-family: 'Village', Times, serif;
+            font-weight: bold;
+            font-size: 2em;
+            letter-spacing: .1em;
+            text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
+            position: absolute;
+
+            top: 80%;
+            left: 17%;
+
+            transform: translate(-50%, 0%);
+        }
+        section.sec5>a{
+            color: rgba(255, 255, 255, 0.801);
+            font-family: Arial, Helvetica, sans-serif;
+            border: 3px solid rgba(128, 128, 128, 0.795);
+            padding: 15px 35px;
+            border-radius: 5px;
+            text-decoration: none;
+
+            position: absolute;
+
+            top: 82%;
+            left: 45%;
+
+            transform: translate(-50%, 0%);
+        }
+        section.sec5>a:hover{
+            border: 3px solid #FF6046;
+            position: absolute;
+
+            top: 81.8%;
+            left: 45.1%;
+
+            transform: translate(-50%, 0%)
+        }
+
+        section.sec5>hr{
+            width: 100px;
+            border: 2px solid #FF6046;
+            border-radius: 1.5px;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.562);
+
+            position: absolute;
+            top: 77%;
+            left: 13%;
+
+            transform: translate(-50%, 0%);
+        }
+
+/*--------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+        footer{
+            width: 98vw;
+            height: 200px;
+            background-color: black;
+            text-align: center;
+            color: grey;
+            padding-top: 50px;
+        }
+        footer>a>img{
+            height: 50px;
+        }
+        footer>p{
+            line-height: 1.2em;
+            padding-top: 20px;
+        }
+    </style>
     <title>Dota 2</title>
 
 </head>
@@ -34,7 +339,7 @@
 
                 <hr>
 
-                <p>De estrategas mágicos a brutamontes ferozes e assassinos astutos, a seleção de heróis do Dota 2 é gigantesca e de uma diversidade sem limites. Usa habilidades incríveis e Ultimates devastadores na tua jornada para a vitória.</p>
+                <p>De engenhosos magos a brutamontes destemidos, passando por rebeldes astutos, a gama de heróis do Dota 2 é enorme e incrivelmente diversa. Lance habilidades incríveis e Ultimates devastadoras no seu caminho para a vitória.</p>
 
                 <a href="https://www.dota2.com/heroes" target="_blank">
                     <h3>VER TODOS HERÓIS</h3>
@@ -43,28 +348,38 @@
         
 
 
-        <section>SECTION 3 <p></p><iframe src="herois.html" frameborder="0" height="1200px"></iframe></section>
+        <section>SECTION 3 <p></p><iframe src="herois.html" frameborder="0" height="1150px"></iframe></section>
 
 
-        <section class="sec4">SECTION 4
+        <section class="sec4">SECTION 2
             <h1>O CIRCUITO</h1>
-            <h2>PROFISSIONAL DE DOTA</h2>
+            <h2>PROFISSIONAL <br> DE DOTA</h2>
+            <hr>
             <p>
                 Quando não estiver subindo nas classificações, você pode aprender com os melhores: o Circuito Profissional de Dota apresenta uma competição do mais alto nível de Dota 2, com transmissão regular pelo cliente do jogo, na Twitch e Steam.TV. Tudo isso culmina no maior campeonato de eSports do mundo, o International — um evento profissional de Dota 2 que você não pode deixar de acompanhar.
             </p>
-            </section>
 
-        <section class="sec5">SECTION 5</section>
+        </section>
+
+        <section class="sec5">
+            <h2>JUNTE-SE À</h2>
+            <h1>BATALHA</h1>
+            <hr>
+            <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank">
+                <h3>JOGUE GRATUITAMENTE AGORA</h3>
+            </a>
+
+        </section>
 
 
+<footer>
 
-        <footer>
-            <a href="https://www.valvesoftware.com/pt-br/"><img src="imagens/valve.jpg" alt="Valve"></a>
-            <a href="https://www.dota2.com/home"><img src="imagens/dota2logo.jpg" alt="Dota2"></a>
-            <p>Dota e o logotipo do Dota são marcas e/ou marcas registradas da Valve Corporation. <br>
-                 2023 Valve Corporation, todos os direitos reservados.</p>
-            <p>Site desenvolvido por Guilherme Amaral para fins de estudo.</p>
-        </footer>
+    <a href="https://www.valvesoftware.com/pt-br/" target="_blank"><img src="imagens/valve.jpg" alt=""></a>
+    <a href="https://www.dota2.com/home?l=brazilian" target="_blank"><img src="imagens/dota2logo.jpg" alt=""></a>
+
+    <p>Dota e o logotipo do Dota são marcas e/ou marcas registradas da Valve Corporation. <br> 2023 Valve Corporation, todos os direitos reservados.</p>
+    <p>Site desenvolvido por Guilherme Amaral para fins de estudo.</p>
+</footer>
     </main>
 </body>
 </html>
