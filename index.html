@@ -129,7 +129,7 @@
         }
 
         section.sec2>hr{
-            width: 100px;
+            width: 8%;
             border: 2px solid #FF6046;
             border-radius: 1.5px;
             box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.562);
@@ -143,14 +143,14 @@
 
 /*------------------------------------------------------------------------------------*/
 
-        section.sec4{
+        .sec4{
             height: 1200px;
             background: url("imagens/international.jpg") no-repeat center center;
             background-size: cover;
             position: relative;
         }
 
-        section.sec4>h1{
+        .sec4>div>h1{
             color: rgba(128, 128, 128, 0.411);
             font-family: 'Village', Times, serif;
             font-weight: bold;
@@ -165,7 +165,7 @@
 
             transform: translate(-50%, 0%);
         }
-        section.sec4>h2{
+        .sec4>div>h2{
             color: rgba(255, 255, 255, 0.692);
             font-family: 'Village', Times, serif;
             font-weight: bold;
@@ -181,7 +181,7 @@
             transform: translate(-50%, 0%);
         }
 
-        section.sec4>p{
+        .sec4>div>p{
             width: 700px;
             color: rgba(255, 255, 255, 0.836);
             font-family: 'Fourche', Times, sans-serif;
@@ -192,17 +192,18 @@
             text-align: center;
             position: relative;
 
-            top: 64%;
+            top: 68%;
             left: 50%;
 
             transform: translate(-50%, 0%);
         }
 
-        section.sec4>hr{
-            width: 100px;
+        .sec4>div>hr{
+            width: 8%;
             border: 2px solid #FF6046;
             border-radius: 1.5px;
             box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.562);
+            margin: 20px;
 
             position: relative;
             top: 63%;
@@ -210,6 +211,23 @@
 
             transform: translate(-50%, 0%);
         }
+
+        .sec4>div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, 0%);
+
+            opacity: 0;
+            transition: all 3s;
+        }
+
+        .sec4:hover div{
+            opacity: 1;
+        }
+
+
 
 /*--------------------------------------------------------------------------------------*/
 
@@ -274,7 +292,7 @@
         }
 
         section.sec5>hr{
-            width: 100px;
+            width: 8%;
             border: 2px solid #FF6046;
             border-radius: 1.5px;
             box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.562);
@@ -325,9 +343,9 @@
                 <a href="https://www.dota2.com/esports/ti12/watch/0/0/series" target="_blank">ESPORTS</a>
             </nav>
         </header>
-        <div>
+
             <iframe width="100%" height="400px" src="https://www.youtube.com/embed/vAwGugKLRn4?si=xfb2V-M2W1bOGa2t&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+
 
         <section>SECTION 1 <p></p><img src="imagens/sec1imagem.jpg" alt=""></section>
         
@@ -352,14 +370,21 @@
 
 
         <section class="sec4">SECTION 2
-            <h1>O CIRCUITO</h1>
-            <h2>PROFISSIONAL <br> DE DOTA</h2>
-            <hr>
-            <p>
-                Quando não estiver subindo nas classificações, você pode aprender com os melhores: o Circuito Profissional de Dota apresenta uma competição do mais alto nível de Dota 2, com transmissão regular pelo cliente do jogo, na Twitch e Steam.TV. Tudo isso culmina no maior campeonato de eSports do mundo, o International — um evento profissional de Dota 2 que você não pode deixar de acompanhar.
-            </p>
 
-        </section>
+            <div>
+                <h1>O CIRCUITO</h1>
+                <h2>PROFISSIONAL <br> DE DOTA</h2>
+                <hr>
+                <p>
+                    Quando não estiver subindo nas classificações, você pode aprender com os melhores: o Circuito Profissional de Dota apresenta uma competição do mais alto nível de Dota 2, com transmissão regular pelo cliente do jogo, na Twitch e Steam.TV. Tudo isso culmina no maior campeonato de eSports do mundo, o International — um evento profissional de Dota 2 que você não pode deixar de acompanhar.
+                </p>
+            </div>
+
+            </section>
+        
+        
+
+
 
         <section class="sec5">
             <h2>JUNTE-SE À</h2>
