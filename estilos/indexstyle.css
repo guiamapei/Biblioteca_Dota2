@@ -61,7 +61,7 @@ header{
 
 
 nav>a{
-    color: rgba(255, 255, 255, 0.801);
+    color: rgba(212, 212, 212, 0.801);
     text-decoration: none;
     font-family: 'Village', Times, serif;
     font-weight: bold;
@@ -146,6 +146,7 @@ nav>a:hover{
     font-size: .7em;
     font-family: 'Fourche', Times, sans-serif;
 }
+
 /*-------------------------------------------------------------------------*/
 
 
