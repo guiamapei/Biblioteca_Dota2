@@ -36,8 +36,8 @@ header{
 .imgnav{
     position: absolute;
 
-    top: 4.5%;
-    left: 25%;
+    top: 4%;
+    left: 28%;
 
     transform: translate(-50%, 0%);
 }
@@ -67,14 +67,14 @@ nav>a{
     color: rgba(212, 212, 212, 0.801);
     text-decoration: none;
     font-family: 'Village', Times, serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1.1em;
     letter-spacing: .2em;
     margin: 10px;
 }
 nav>a:hover{
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 60px white;
+    text-shadow: 1px 1px 30px white;
 }
 .sec0{
     width: 100vw;
@@ -82,25 +82,23 @@ nav>a:hover{
 .sec0>div>h1{
     color: rgba(255, 255, 255, 0.829);
     font-family: 'Village', Times, serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 4em;
     line-height: 1.1em;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.527);
     position: relative;
 }
 .sec0>div>h2{
     width: 300px;
-    color: rgba(187, 187, 187, 0.753);
+    color: rgba(187, 187, 187, 0.945);
     font-family: 'Village', Times, serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1.2em;
     letter-spacing: .1em;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.253);
     position: relative;
 }
 .sec0>div{
     position: absolute;
-    top: 22%;
+    top: 15%;
     left: 25%;
 
     transform: translate(-50%, 0%);
@@ -109,11 +107,10 @@ nav>a:hover{
     width: 7%;
     border: 1.5px solid #ff3f21;
     border-radius: 1.5px;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.253);
     margin-top: 5px;
 
     position: absolute;
-    top: 58%;
+    top: 51%;
     left: 7%;
 
     transform: translate(-50%, 0%);
@@ -124,12 +121,12 @@ nav>a:hover{
     letter-spacing: .2em;
     border: 3px solid rgba(128, 128, 128, 0.795);
     padding: 5px 45px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
 
     position: absolute;
 
-    top: 60%;
+    top: 53%;
     left: 18%;
 
     transform: translate(-50%, 0%);
@@ -138,47 +135,54 @@ nav>a:hover{
     border: 3px solid #FF6046;
     position: absolute;
 
-    top: 59.8%;
+    top: 52.8%;
     left: 18%;
 
     transform: translate(-50%, 0%)
 }
 .sec0>a>h3{
     font-family: 'Village', Times, sans-serif;
+    font-weight: normal;
 }
 .sec0>a>h3>p{
     font-size: .7em;
     font-family: 'Fourche', Times, sans-serif;
+    font-weight: normal;
 }
 
 /*-------------------------------------------------------------------------*/
 
 
-.secblock{
+.conteiner{
+    position: relative;
+    display: flex;
+    width: 98.7vw;
     height: 200px;
     background-color: black;
+    box-shadow:0px 0px 40px 35px;
+    flex-direction: row;
+    justify-content: space-around;
 }
-.conteiner{
-    display: inline-block;
-    margin: 0 auto;
-    background-color: grey;
-    width: 300px;
-    height: 169px;
-    border: 0px solid white;
-}
-.conteiner>hr{
+div>hr{
     width: 99.4%;
     border: 1px solid rgb(255, 0, 0);
     position: relative;
     top: 100%;
     left: 0%;
 }
-
+.item{
+    width: 350px;
+    height: 196px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
 .cont1{
     background: url('../imagens/info1.jpeg') no-repeat center center ;
 }
 .cont2{
     background: url('../imagens/copenhagem.png') no-repeat center center;
+    
+    margin-left: -170px;
+    margin-right: -170px;
 }
 .cont3{
     background: url('../imagens/info3.png') no-repeat center center;
