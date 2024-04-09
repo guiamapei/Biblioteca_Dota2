@@ -5,7 +5,7 @@
     
 }
 
-body{
+html,body{
     background-color: black;
 }
 
@@ -16,14 +16,14 @@ h1{
 }
 
 img{
-    width: 115px;
-    box-shadow: 5px 5px 10px 1px  rgba(0, 0, 0, 0.74);
-    border-radius: 10px;
-    padding: 2px;
+    width: 100px;
+    box-shadow: 2px 2px 5px 1px  rgba(0, 0, 0, 0.74);
+    border-radius: 80%;
+    padding: 1px;
     
 }
 img:hover {
-    width: 120px;
+    width: 102px;
 }
 
 ::-webkit-scrollbar{
