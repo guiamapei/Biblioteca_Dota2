@@ -110,7 +110,7 @@ nav>a:hover{
     margin-top: 5px;
 
     position: absolute;
-    top: 51%;
+    top: 50.1%;
     left: 7%;
 
     transform: translate(-50%, 0%);
@@ -127,7 +127,7 @@ nav>a:hover{
     position: absolute;
 
     top: 53%;
-    left: 18%;
+    left: 18.2%;
 
     transform: translate(-50%, 0%);
 }
@@ -136,7 +136,7 @@ nav>a:hover{
     position: absolute;
 
     top: 52.8%;
-    left: 18%;
+    left: 18.2%;
 
     transform: translate(-50%, 0%)
 }
@@ -159,13 +159,13 @@ nav>a:hover{
     width: 98.7vw;
     height: 200px;
     background-color: black;
-    box-shadow:0px 0px 40px 35px;
+    box-shadow:0px 0px 50px 65px;
     flex-direction: row;
     justify-content: space-around;
 }
 div>hr{
     width: 99.4%;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgba(75, 75, 75, 0.856);
     position: relative;
     top: 100%;
     left: 0%;
@@ -173,7 +173,9 @@ div>hr{
 .item{
     width: 350px;
     height: 196px;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 0px solid rgba(0, 0, 0, 0);
+    position: relative;
+    top: -12%;
 }
 .cont1{
     background: url('../imagens/info1.jpeg') no-repeat center center ;
