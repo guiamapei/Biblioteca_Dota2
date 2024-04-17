@@ -22,8 +22,13 @@ main{
     width: 98.7vw;
     height: 100vh;
 }
-iframe{
-    width: 98.7vw;
+.video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5;
+    overflow: clip;
 }
 
 
@@ -42,11 +47,11 @@ header{
     transform: translate(-50%, 0%);
 }
 .navegacao{
-    width: 700px;
+    width: 600px;
     position: absolute;
 
     top: 5%;
-    left: 65%;
+    left: 62%;
 
     transform: translate(-50%, 0%);
 }
@@ -61,7 +66,26 @@ header{
 
     font-size: 1.5em;
 }
+.login{
+    width: 55px;
+    color: rgba(212, 212, 212, 0.801);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: .7em;
+    letter-spacing: .2em;
+    padding: 7px;
+    position: absolute;
 
+    top: 150%;
+    left: 83%;
+}
+.login:hover{
+    font-size: .8em;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 2px black;
+    top: 148%;
+    left: 82.5%;
+}
 
 nav>a{
     color: rgba(212, 212, 212, 0.801);
@@ -70,138 +94,20 @@ nav>a{
     font-weight: normal;
     font-size: 1.1em;
     letter-spacing: .2em;
-    margin: 10px;
+    padding-left: 10px;
 }
 nav>a:hover{
+    font-size: 1.11em;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 30px white;
-}
-.sec0{
-    width: 100vw;
-}
-.sec0>div>h1{
-    color: rgba(255, 255, 255, 0.829);
-    font-family: 'Village', Times, serif;
-    font-weight: normal;
-    font-size: 4em;
-    line-height: 1.1em;
-    position: relative;
-}
-.sec0>div>h2{
-    width: 300px;
-    color: rgba(187, 187, 187, 0.945);
-    font-family: 'Village', Times, serif;
-    font-weight: normal;
-    font-size: 1.2em;
-    letter-spacing: .1em;
-    position: relative;
-}
-.sec0>div{
-    position: absolute;
-    top: 15%;
-    left: 25%;
-
-    transform: translate(-50%, 0%);
-}
-.sec0>hr{
-    width: 7%;
-    border: 1.5px solid #ff3f21;
-    border-radius: 1.5px;
-    margin-top: 5px;
-
-    position: absolute;
-    top: 50.1%;
-    left: 7%;
-
-    transform: translate(-50%, 0%);
+    text-shadow: 1px 1px 5px white;
 }
 
-.sec0>a{
-    color: rgba(255, 255, 255, 0.801);
-    letter-spacing: .2em;
-    border: 3px solid rgba(128, 128, 128, 0.795);
-    padding: 5px 45px;
-    border-radius: 10px;
-    text-decoration: none;
-
-    position: absolute;
-
-    top: 53%;
-    left: 18.2%;
-
-    transform: translate(-50%, 0%);
-}
-.sec0>a:hover{
-    border: 3px solid #FF6046;
-    position: absolute;
-
-    top: 52.8%;
-    left: 18.2%;
-
-    transform: translate(-50%, 0%)
-}
-.sec0>a>h3{
-    font-family: 'Village', Times, sans-serif;
-    font-weight: normal;
-}
-.sec0>a>h3>p{
-    font-size: .7em;
-    font-family: 'Fourche', Times, sans-serif;
-    font-weight: normal;
-}
-
-/*-------------------------------------------------------------------------*/
-
-
-.conteiner{
-    position: relative;
-    display: flex;
-    width: 98.7vw;
-    height: 200px;
-    background-color: black;
-    box-shadow:0px 0px 50px 65px;
-    flex-direction: row;
-    justify-content: space-around;
-}
-div>hr{
-    width: 99.4%;
-    border: 1px solid rgba(75, 75, 75, 0.856);
-    position: relative;
-    top: 100%;
-    left: 0%;
-}
-.item{
-    width: 350px;
-    height: 196px;
-    border: 0px solid rgba(0, 0, 0, 0);
-    position: relative;
-    top: -12%;
-}
-.cont1{
-    background: url('../imagens/info1.jpeg') no-repeat center center ;
-}
-.cont2{
-    background: url('../imagens/copenhagem.png') no-repeat center center;
-    
-    margin-left: -170px;
-    margin-right: -170px;
-}
-.cont3{
-    background: url('../imagens/info3.png') no-repeat center center;
-}
+/*----------------------------------------------------------------------------*/
 
 
 
-/*-------------------------------------------------------------------------*/
-.sec1{
-    height: 1000px;
-    background: url(../imagens/sec1imagem.jpg) no-repeat center center;
-    background-size: cover;
-    position: relative;
-    margin-top: 150px;
-}
 
-.sec1>div>h2{
+.bodySec>h3{
     color: rgba(128, 128, 128, 0.411);
     font-family: 'Village', Times, serif;
     font-weight: bold;
@@ -211,20 +117,20 @@ div>hr{
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.527);
     position: relative;
 }
-.sec1>div>h1{
-    color: rgba(255, 255, 255, 0.692);
+.bodySec>h2{
+    color: rgba(255, 255, 255, 0.979);
     font-family: 'Village', Times, serif;
     font-weight: bold;
     font-size: 6em;
-    line-height: 1.1em;
+    letter-spacing: .1em;
     text-align: center;
-    text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
-    padding-top: 25px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.39);
+    padding-top: 0px;
     position: relative;
 }
-.sec1>div{
+.bodySec{
     position: relative;
-    top: 15%;
+    top: 40%;
     left: 50%;
 
     transform: translate(-50%, 0%);
@@ -234,11 +140,19 @@ div>hr{
     transition-duration: 3s;
     transition-property: all;
 }
-.sec1:hover div{
-    opacity: 1;
+
+
+.footerSec{
+    width: 900px;
+    height: 230px;
+    position: relative;
+
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
-.sec1>hr{
+.footerSec>hr{
     width: 8%;
     border: 2px solid #FF6046;
     border-radius: 1.5px;
@@ -246,12 +160,12 @@ div>hr{
     margin-top: 5px;
 
     position: absolute;
-    top: 49.5%;
+    top: 0%;
     left: 50%;
 
     transform: translate(-50%, 0%);
 }
-.sec1>p{
+.footerSec>p{
     width: 900px;
     color: rgba(255, 255, 255, 0.836);
     font-family: 'Fourche', Times, sans-serif;
@@ -262,13 +176,13 @@ div>hr{
     text-align: center;
     position: absolute;
 
-    top: 52%;
+    top: 10%;
     left: 50%;
 
     transform: translate(-50%, 0%);
 }
 
-.sec1>a{
+.footerSec>a{
     color: rgba(255, 255, 255, 0.801);
     font-family: Arial, Helvetica, sans-serif;
     border: 3px solid rgba(128, 128, 128, 0.795);
@@ -278,127 +192,295 @@ div>hr{
 
     position: absolute;
 
-    top: 67.5%;
+    top: 75%;
     left: 50%;
 
     transform: translate(-50%, 0%);
 }
-.sec1>a:hover{
+.footerSec>a:hover{
     border: 3px solid #FF6046;
+    box-shadow: -1px 1px 5px #ff5f4652;
     position: absolute;
 
-    top: 67.3%;
-    left: 50%;
+    top: 74.7%;
+    left: 50.1%;
 
     transform: translate(-50%, 0%)
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------*/
+
+
+
+.animationFadeIn{
+    animation: fadeIn 2s ease-in 1s 1 normal forwards;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+    from {left: 0%;}
+    to {left: 7.8%;}
+}
+.sec0>div>a>img{
+    width: 30px; 
+    height: 35px; 
+    position: absolute; 
+    top: 25%;
+    left: 6.5%; 
+    transform: translate(-50%, 0%);
+}
+
+.sec0{
+    width: 555px;
+    position: absolute;
+    top: 13%;
+    left: 7.8%;
+    opacity: 0;
+}
+.sec0>div>h2{
+    color: rgba(255, 255, 255, 0.829);
+    font-family: 'Village', Times, serif;
+    font-weight: normal;
+    font-size: 3.5em;
+    line-height: 1.1em;
+    position: relative;
+}
+.sec0>div>h3{
+    width: 300px;
+    color: rgba(187, 187, 187, 0.945);
+    font-family: 'Village', Times, serif;
+    font-weight: normal;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    position: relative;
+}
+.sec0>div>hr{
+    width: 15%;
+    border: 1.5px solid #ff3f21;
+    border-radius: 1.5px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+
+    position: relative;
+}
+
+.sec0>div>a{
+    color: rgba(255, 255, 255, 0.877);
+    letter-spacing: .2em;
+    border: 3px solid rgba(128, 128, 128, 0.795);
+    padding: 15px 45px 15px 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+
+    position: absolute;
+
+}
+.sec0>div>a:hover{
+    border: 3px solid #FF6046;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.623);
+
+    top: 99.6%;
+    left: 0.2%;
+}
+.sec0>div>a>h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.sec0>div>a>h4>p{
+    font-size: .7em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
 /*-------------------------------------------------------------------------*/
+.cont{
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    top: 63%;
+    left: 8%;
+}
+.cont>h2{
+    display: inline;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 0.8em;
+    letter-spacing: .1em;
+}
+.cont>a{
+    display: inline-block;
+    color: rgb(192, 192, 192);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.cont>a:hover{
+    text-shadow: -2px 2px 2px black;
+    position: relative;
+    bottom: 5%;
+    left: .5%;
+}
+
+
+
+.conteiner>a{
+    height: 170px;
+}
+.conteiner{
+    position: relative;
+    display: flex;
+    width: 98.7vw;
+    height: 200px;
+    background-color: black;
+    box-shadow:0px 0px 25px 40px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.conteiner>a>div>hr{
+    width: 100%;
+    border: 1px solid rgba(75, 75, 75, 0.856);
+    position: relative;
+    top: 100%;
+}
+.item{
+    width: 350px;
+    height: 196px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    position: relative;
+    top: -12%;
+    box-shadow: 0px -40px 40px 15px black inset;
+}
+.textitem{
+    width: 90%;
+    position: absolute;
+
+    bottom: 0%;
+}
+.textitem>h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Village', Times, serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    padding: 0px 10px 0px 10px;
+
+}
+.textitem>h3{
+    color: rgba(204, 204, 204, 0.945);
+    font-family: 'Village', Times, serif;
+    font-weight: normal;
+    font-size: 0.9em;
+    letter-spacing: .1em;
+    padding: 0px 0px 5px 10px;
+}
+.item>p{
+    width: 330px;
+    color: rgba(158, 158, 158, 0.836);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 1.2em;
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px;
+    opacity: 0;
+
+    position: absolute;
+    bottom: 30%;
+
+}
+.conteiner>a:hover .item{
+    height: 210px;
+    transition-delay: 0s;
+    transition-duration: 1.5s;
+    transition-property: all;
+    box-shadow: 0px -60px 100px 20px black inset;
+}
+.conteiner>a:hover div>.textitem{
+    transition-delay: 0s;
+    transition-duration: 0.7s;
+    transition-property: all;
+    bottom: 48.5%;
+}
+.conteiner>a:hover .item>p{
+    padding-bottom: 20px;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.7s;
+    transition-property: all;
+    bottom: -7%;
+}
+.conteiner>a:hover hr{
+    width: 100%;
+    border: 1px solid #FF6046;
+    box-shadow: -1px 1px 5px #ff5f4652;
+    position: absolute;
+    transition: 3s all;
+}
+
+
+.cont1{
+    width: 350px;
+    background: url('../imagens/item1.jpg') no-repeat center center ;
+}
+.cont2{
+    background: url('../imagens/item2.png') no-repeat center center;
+    
+    margin-left: -170px;
+    margin-right: -170px;
+}
+.cont3{
+    background: url('../imagens/item3.png') no-repeat center center;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------*/
+
+.sec1{
+    height: 1000px;
+    background: url(../imagens/sec1imagem.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    margin-top: 150px;
+}
+.sec1:hover .bodySec{
+    opacity: 1;
+    top: 30%;
+}
+
+/*-------------------------------------------------------------------------*/
+
 .sec2{
     height: 120vh;
     background: url("../imagens/sec2imagem.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
+    margin-top: 200px;
 }
-
-.sec2>div>h2{
-    color: rgba(128, 128, 128, 0.411);
-    font-family: 'Village', Times, serif;
-    font-weight: bold;
-    font-size: 5em;
-    letter-spacing: .1em;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.527);
-    position: relative;
-}
-.sec2>div>h1{
-    color: rgba(255, 255, 255, 0.692);
-    font-family: 'Village', Times, serif;
-    font-weight: bold;
-    font-size: 6em;
-    line-height: 1.1em;
-    text-align: center;
-    text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
-    padding-top: 25px;
-    position: relative;
-}
-
-
-.sec2>hr{
-    width: 8%;
-    border: 2px solid #FF6046;
-    border-radius: 1.5px;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.562);
-    margin-top: 5px;
-
-    position: absolute;
-    top: 58.5%;
-    left: 50%;
-
-    transform: translate(-50%, 0%);
-}
-
-.sec2>p{
-    width: 700px;
-    color: rgba(255, 255, 255, 0.836);
-    font-family: 'Fourche', Times, sans-serif;
-    font-weight: normal;
-    line-height: 1.5em;
-    font-size: 1.2em;
-    
-    text-align: center;
-    position: absolute;
-
-    top: 66.5%;
-    left: 50%;
-
-    transform: translate(-50%, 0%);
-}
-
-.sec2>a{
-    color: rgba(255, 255, 255, 0.801);
-    font-family: Arial, Helvetica, sans-serif;
-    border: 3px solid rgba(128, 128, 128, 0.795);
-    padding: 10px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-
-    position: absolute;
-
-    top: 80%;
-    left: 50%;
-
-    transform: translate(-50%, 0%);
-}
-.sec2>a:hover{
-    border: 3px solid #FF6046;
-    position: absolute;
-
-    top: 79.7%;
-    left: 50%;
-
-    transform: translate(-50%, 0%)
-}
-
-.sec2>div{
-    position: relative;
-    top: 28%;
-    left: 50%;
-
-    transform: translate(-50%, 0%);
-
-    opacity: 0;
-    transition-delay: 0s;
-    transition-duration: 3s;
-    transition-property: all;
-}
-
-.sec2:hover div{
+.sec2:hover .bodySec{
     opacity: 1;
+    top: 30%;
 }
-
-
-
 
 /*------------------------------------------------------------------------------------*/
 
@@ -409,86 +491,10 @@ div>hr{
     position: relative;
 }
 
-.sec4>div>h1{
-    color: rgba(128, 128, 128, 0.411);
-    font-family: 'Village', Times, serif;
-    font-weight: bold;
-    font-size: 5em;
-    letter-spacing: .1em;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.527);
-    position: relative;
-
-    top: 60%;
-    left: 50%;
-
-    transform: translate(-50%, 0%);
-}
-.sec4>div>h2{
-    color: rgba(255, 255, 255, 0.692);
-    font-family: 'Village', Times, serif;
-    font-weight: bold;
-    font-size: 6em;
-    line-height: 1.1em;
-    text-align: center;
-    text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.527);
-    position: absolute;
-
-    top: 95%;
-    left: 50%;
-
-    transform: translate(-50%, 0%);
-}
-
-.sec4>p{
-    width: 800px;
-    color: rgba(255, 255, 255, 0.836);
-    font-family: 'Fourche', Times, sans-serif;
-    font-weight: normal;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    
-    text-align: center;
-    position: relative;
-
-    top: 65%;
-    left: 50%;
-
-    transform: translate(-50%, 0%);
-}
-
-.sec4>hr{
-    width: 8%;
-    border: 2px solid #FF6046;
-    border-radius: 1.5px;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.562);
-    margin: 20px;
-
-    position: relative;
-    top: 65%;
-    left: 50%;
-
-    transform: translate(-50%, 0%);
-}
-
-.sec4>div{
-    position: absolute;
-    top: 37%;
-    left: 50%;
-
-    transform: translate(-50%, 0%);
-
-    opacity: 0;
-    transition-delay: 0s;
-    transition-duration: 3s;
-    transition-property: all;
-}
-
-.sec4:hover div{
+.sec4:hover .bodySec{
     opacity: 1;
+    top: 30%;
 }
-
-
 
 /*--------------------------------------------------------------------------------------*/
 
@@ -498,7 +504,7 @@ div>hr{
     background-size: cover;
     position: relative;
 }
-.sec5>h1{
+.sec5>h2{
     color: rgba(255, 255, 255, 0.74);
     font-family: 'Village', Times, serif;
     font-weight: bold;
@@ -512,7 +518,7 @@ div>hr{
 
     transform: translate(-50%, 0%);
 }
-.sec5>h2{
+.sec5>h3{
     
     color: rgba(128, 128, 128, 0.863);
     font-family: 'Village', Times, serif;
@@ -545,10 +551,11 @@ div>hr{
 }
 .sec5>a:hover{
     border: 3px solid #FF6046;
+    box-shadow: -1px 1px 5px #ff5f4652;
     position: absolute;
 
-    top: 89.7%;
-    left: 42%;
+    top: 89.9%;
+    left: 42.1%;
 
     transform: translate(-50%, 0%)
 }
