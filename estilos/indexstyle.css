@@ -22,7 +22,7 @@ main{
     width: 98.7vw;
     height: 100vh;
 }
-.video{
+video{
     position: relative;
     width: 100%;
     height: 100%;
@@ -32,75 +32,79 @@ main{
 }
 
 
+
 /*------------------------------------------------------------------------------*/
 
-header{
-    width: 98.7vw;
-    height: 490px;
-}
-.imgnav{
-    position: absolute;
 
-    top: 4%;
-    left: 28%;
-
-    transform: translate(-50%, 0%);
-}
 .navegacao{
-    width: 600px;
-    position: absolute;
-
-    top: 5%;
-    left: 62%;
-
-    transform: translate(-50%, 0%);
-}
-.navegacaop{
-    color: black;
+    width: 1000px;
     position: absolute;
 
     top: 4%;
-    left: 31.5%;
-
-    transform: translate(-50%, 0%);
-
-    font-size: 1.5em;
+    left: 25%;
 }
-.login{
-    width: 55px;
-    color: rgba(212, 212, 212, 0.801);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: .7em;
-    letter-spacing: .2em;
-    padding: 7px;
+.imgnav1{
+    background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png');
+    width: 180px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: .7;
     position: absolute;
+    top: 2%;
+    left: 8%;
+}
+.imgnav1:hover{
+    opacity: 1;
+}
 
-    top: 150%;
-    left: 83%;
-}
-.login:hover{
-    font-size: .8em;
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 2px black;
-    top: 148%;
-    left: 82.5%;
-}
+
 
 nav>a{
-    color: rgba(212, 212, 212, 0.801);
+    color: white;
     text-decoration: none;
     font-family: 'Village', Times, serif;
     font-weight: normal;
     font-size: 1.1em;
     letter-spacing: .2em;
-    padding-left: 10px;
+    padding-left: 15px;
+    opacity: .6;
 }
 nav>a:hover{
     font-size: 1.11em;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 5px white;
+    opacity: 1;
 }
+
+
+
+
+
+.login{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+    letter-spacing: .2em;
+    display: flex;
+    position: absolute;
+    opacity: .8;
+
+    left: 70%;
+}
+.login:hover{
+    position: absolute;
+    top: 95%;
+    left: 70.5%;
+    opacity: 1;
+    font-size: 1.3;
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.678);
+
+}
+
+
 
 /*----------------------------------------------------------------------------*/
 
@@ -234,15 +238,62 @@ nav>a:hover{
     from {left: 0%;}
     to {left: 7.8%;}
 }
-.sec0>div>a>img{
-    width: 30px; 
-    height: 35px; 
-    position: absolute; 
-    top: 25%;
-    left: 6.5%; 
-    transform: translate(-50%, 0%);
-}
+.homePagebtn{
+    min-width: 288px;
+    height: 78px;
+    border-radius: 6px;
+    border: 3px solid #ffffff90;
+    box-shadow: 0px 0px 5px #000;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    transition-property: filter, transform, box-shadow;
+    transition-timing-function: ease-in-out;
+    transition-duration: .1s;
 
+    position: absolute;
+    top: 93%;
+    
+}
+.homePagebtn:hover{
+    position: absolute;
+    top: 92.5%;
+    left: 0.3%;
+    box-shadow: -1px 1px 3px #ff5f4667;
+    border: 3px solid #FF6046;
+}
+.homePageimg{
+    width: 48px;
+    height: 48px;
+    margin: 0px 8px;
+    background-size: contain;
+    background-repeat: cover;
+}
+.homePagetext{
+    flex-grow: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+.homePagetext1{
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+    font-family: Reaver, serif;
+    font-weight: 600;
+}
+.homePagetext2{
+    font-size: 15px;
+    color: #858585;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px #000;
+}
 .sec0{
     width: 555px;
     position: absolute;
@@ -277,25 +328,8 @@ nav>a:hover{
     position: relative;
 }
 
-.sec0>div>a{
-    color: rgba(255, 255, 255, 0.877);
-    letter-spacing: .2em;
-    border: 3px solid rgba(128, 128, 128, 0.795);
-    padding: 15px 45px 15px 50px;
-    margin-top: 15px;
-    border-radius: 10px;
-    text-decoration: none;
 
-    position: absolute;
 
-}
-.sec0>div>a:hover{
-    border: 3px solid #FF6046;
-    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.623);
-
-    top: 99.6%;
-    left: 0.2%;
-}
 .sec0>div>a>h4{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
@@ -341,18 +375,18 @@ nav>a:hover{
 
 
 
-.conteiner>a{
-    height: 170px;
-}
+
 .conteiner{
-    position: relative;
+    position: absolute;
     display: flex;
     width: 98.7vw;
-    height: 200px;
+    height: 350px;
     background-color: black;
     box-shadow:0px 0px 25px 40px;
     flex-direction: row;
     justify-content: space-around;
+    top: 73%;
+
 }
 .conteiner>a>div>hr{
     width: 100%;
@@ -437,7 +471,6 @@ nav>a:hover{
 
 
 .cont1{
-    width: 350px;
     background: url('../imagens/item1.jpg') no-repeat center center ;
 }
 .cont2{
@@ -461,7 +494,7 @@ nav>a:hover{
     background: url(../imagens/sec1imagem.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
-    margin-top: 150px;
+    margin-top: 35%;
 }
 .sec1:hover .bodySec{
     opacity: 1;
