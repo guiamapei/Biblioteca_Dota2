@@ -34,23 +34,27 @@ img:hover {
 
 
 .forca {
-    background-image: linear-gradient(black, rgba(207, 0, 0, 0.5), black );
-    padding: 15px 0px 15px 0px;
-    border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(166deg, rgba(0,0,0,1) 0%, rgb(58, 0, 0) 150%, rgb(75, 0, 0) 93%, rgb(112, 0, 0) 99%);
     text-align: center;
+
+    box-shadow: -10px -20px 30px inset;
 }
 .agilidade {
-    background-image: linear-gradient(black, rgba(0, 207, 0, 0.5), black);
-    padding: 15px 0px 15px 0px;
+    background: rgb(0,0,0);
+    background: linear-gradient(166deg, rgba(0,0,0,1) 0%, rgb(0, 58, 0) 150%, rgb(0, 75, 0) 93%, rgb(0, 61, 0) 99%);    padding: 15px 0px 15px 0px;
     border-radius: 10px;
     text-align: center;
     margin-top: 10px;
+    box-shadow: -10px -20px 30px inset;
+    
 }
 .inteligencia {
-    background-image: linear-gradient(black, rgba(0, 0, 207, 0.5), black);
-    padding: 15px 0px 15px 0px;
+    background: rgb(0,0,0);
+    background: linear-gradient(166deg, rgba(0,0,0,1) 0%, rgba(0,31,58,1) 150%, rgba(0,40,75,1) 93%, rgba(0,59,112,1) 99%);    padding: 15px 0px 15px 0px;
     border-radius: 10px;
     text-align: center;
     margin-top: 10px;
+    box-shadow: -10px -20px 30px inset;
     
 }
