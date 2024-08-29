@@ -7,13 +7,22 @@
     <title>Dota 2</title>
 
 </head>
+            <script>
+                function clickMenu() {
+                    if (telalogin.style.display == 'block') {
+                        telalogin.style.display = 'none'
+                    } else {
+                        telalogin.style.display = 'block'
+                    }
+                }
+            </script>
 <body>
     <main>
         <header>
             <div class="login">
-                <button class="loginbtn">Iniciar Sessão</button>
+                <button class="loginbtn" onclick="clickMenu()">Iniciar Sessão</button>
 
-                <div class="telalogin">
+                <div id="telalogin">
                     <label for="inick">Nickname: </label><br>
                     <input type="text" name="inick" id="inick"><br>
                     <label for="isenha">Senha: </label><br>
